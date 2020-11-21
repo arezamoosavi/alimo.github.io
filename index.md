@@ -10,6 +10,16 @@
 
 **Tools:** Docker, Tensorflow, Torch, Keras
 
+---
+<!-- ### Streaming -->
+
+- [Transfer Learning](https://github.com/arezamoosavi/circus_of_orchestra)
+
+**Detail:** Implementation of training, pre-trained keras and torch models for categorical datasets
+
+**Tools:** Docker, Tensorflow, Torch, Keras
+
+
 <!-- [Project 1 Title](/sample_page)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
