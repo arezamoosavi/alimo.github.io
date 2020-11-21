@@ -2,12 +2,9 @@ title: Alireza Moosavi
 logo: "/images/logo.jpg?raw=true" # your photo (or logo) here
 description:
   > # your text below (remove <br> elements if you don't need line breaks)
-  Intrested in bigdata solutions in real world problems.
-  <br><br>
-  Experienced in data modeling and web services with 
-  heavy industrials, robotics sensor data and banking transaction data
-  <br><br>
+
+
   <a href="https://linkedin.com/in/sdamoosavi/">View My LinkedIn Profile</a>
 
-theme: jekyll-theme-minimal
+theme: jekyll-theme-so-simple
 google_analytics: UA-000000-0 # your Google Analytics tracking ID here
