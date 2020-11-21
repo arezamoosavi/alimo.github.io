@@ -3,7 +3,8 @@ title: Alireza Moosavi
 description:
   > # your text below (remove <br> elements if you don't need line breaks)
 
+
   <a href="https://linkedin.com/in/sdamoosavi/">View My LinkedIn Profile</a>
 
-theme: jekyll-theme-time-machine
+theme: jekyll-theme-slate
 google_analytics: UA-000000-0 # your Google Analytics tracking ID here
