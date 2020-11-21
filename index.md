@@ -1,19 +1,15 @@
-## Education
+## Projects
 
 ---
 
-### Amir Kabir University of Technology
+### Deep Learning
 
-Master of Science in Mechatronics [2018-2020]
+- [Transfer Learning](https://github.com/arezamoosavi/circus_of_orchestra)
 
-**Thesis:** Steam Turbine Modeling based on Power Plant's Real Data
+**Detail:** Implementation of training, pre-trained keras and torch models for categorical datasets
 
-### KNT University of Technology
-
-Bachelor of Science in Mechanics [2013-2017]
-
-**Thesis:** Modeling and Control of ABB's Heat Recover Steam Generator
-
+**Tools:** Docker, Tensorflow, Torch, Keras
+s
 <!-- [Project 1 Title](/sample_page)
 <img src="images/dummy_thumbnail.jpg?raw=true"/>
 
