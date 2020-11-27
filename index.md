@@ -1,28 +1,4 @@
-## Projects
-
----
-
-### [Transfer Learning Application](https://github.com/arezamoosavi/circus_of_orchestra)
-
-**Detail:** Implementation of training, pre-trained keras and torch models for categorical datasets
-
-**Tools:** Docker, Tensorflow, Torch, Keras
-
----
-
-### [GPS Data Stream Processing](https://github.com/arezamoosavi/bluebus)
-
-**Detail:** Analysis of streams of gps data in kafka using spark-streaming
-
-**Tools:** Docker, Kafka, Spark, Postgres
-
----
-
-### [Benchmarking Web Frameworks](https://github.com/arezamoosavi/web-services-bench)
-
-**Detail:** Implementation of very simple web applications
-
-**Tools:** Docker, Django, Flask, Fastapi, Falcon, Rust, Go
+## Big Projects
 
 ---
 
@@ -119,36 +95,6 @@
 
 ---
 
-### [Real-time Dashboard](https://github.com/arezamoosavi/puiiter)
-
-**Detail:** Monitoring kafka and datasets in mysql on grafana
-
-**Tools:** Prometheus, Grafana, Mysql, Kafka, Docker
-
-- [Medium](https://medium.com/@sdamoosavi/real-time-data-monitoring-with-grafana-2e9d0a51f55)
-
----
-
-### [Real-time Bitcoin Price](https://github.com/arezamoosavi/BTC-Alarming)
-
-**Detail:** Implementation of training, pre-trained keras and torch models for categorical datasets
-
-**Tools:** Faust, Kafka, Asyncpg, Tortoise, Docker, Redis
-
-- [Medium](https://medium.com/@sdamoosavi/real-time-bitcoin-notification-with-faust-f8fc32490fa5)
-
----
-
-### [ETL With Cassandra](https://github.com/arezamoosavi/ETL-Cassandra)
-
-**Detail:** ETL Google Stock data to Cassandra and predicting the next month stock’s closing price
-
-**Tools:** Cassandra, Pandas, Sklearn, ETL, Docker
-
-- [Medium](https://medium.com/@sdamoosavi/google-stock-data-etl-with-cassandra-and-predictive-modeling-with-it-756a56b49ea9)
-
----
-
 ### [Goodreaders Book Recommender](https://github.com/arezamoosavi/book-recommend-web-service)
 
 **Detail:** Book Recommender based on favorated books
@@ -180,26 +126,6 @@
 
 - [Medium (1)](https://medium.com/@sdamoosavi/movie-recommender-web-service-ml-ce6d11d1d13f)
 - [Medium (2)](https://medium.com/@sdamoosavi/movie-recommender-web-service-flask-and-celery-bc792e254a4a)
-
----
-
-### [Store App with Graphql](https://github.com/arezamoosavi/shopping-app)
-
-**Detail:** A simple graphql implementation with django
-
-**Tools:** Django Rest Framework, Postgre, Docker, Graphiql, Graphene
-
-- [Medium](https://medium.com/@sdamoosavi/shopping-application-with-django-and-django-graphene-7b47e9d1bf7a)
-
----
-
-### [Mock for Testing Faust Streaming](https://github.com/arezamoosavi/f-on-top)
-
-**Detail:** Testing faust application with mongodb.
-
-**Tools:** Faust, Mongodb, Mock, Unit tests, Kafka, Docker
-
-- [Medium](https://medium.com/@sdamoosavi/mocking-for-unit-testing-in-faust-application-and-mongodb-ae40b31e0832)
 
 ---
 
@@ -243,11 +169,82 @@
 
 ---
 
-### [Jupyter k8s Deployment](https://github.com/arezamoosavi/tpum-service)
 
-**Tools:** Centos7, Kubernetes, Jupyter, Docker
+## Small Projects and Practices:
 
-- [Medium](https://medium.com/@sdamoosavi/deploy-jupyter-lab-with-kubernetes-135f54e04da)
+---
+
+### [Store App with Graphql](https://github.com/arezamoosavi/shopping-app)
+
+**Detail:** A simple graphql implementation with django
+
+**Tools:** Django Rest Framework, Postgre, Docker, Graphiql, Graphene
+
+- [Medium](https://medium.com/@sdamoosavi/shopping-application-with-django-and-django-graphene-7b47e9d1bf7a)
+
+---
+
+### [Mock for Testing Faust Streaming](https://github.com/arezamoosavi/f-on-top)
+
+**Detail:** Testing faust application with mongodb.
+
+**Tools:** Faust, Mongodb, Mock, Unit tests, Kafka, Docker
+
+- [Medium](https://medium.com/@sdamoosavi/mocking-for-unit-testing-in-faust-application-and-mongodb-ae40b31e0832)
+
+---
+
+### [Real-time Dashboard](https://github.com/arezamoosavi/puiiter)
+
+**Detail:** Monitoring kafka and datasets in mysql on grafana
+
+**Tools:** Prometheus, Grafana, Mysql, Kafka, Docker
+
+- [Medium](https://medium.com/@sdamoosavi/real-time-data-monitoring-with-grafana-2e9d0a51f55)
+
+---
+
+### [Real-time Bitcoin Price](https://github.com/arezamoosavi/BTC-Alarming)
+
+**Detail:** Implementation of training, pre-trained keras and torch models for categorical datasets
+
+**Tools:** Faust, Kafka, Asyncpg, Tortoise, Docker, Redis
+
+- [Medium](https://medium.com/@sdamoosavi/real-time-bitcoin-notification-with-faust-f8fc32490fa5)
+
+---
+
+### [ETL With Cassandra](https://github.com/arezamoosavi/ETL-Cassandra)
+
+**Detail:** ETL Google Stock data to Cassandra and predicting the next month stock’s closing price
+
+**Tools:** Cassandra, Pandas, Sklearn, ETL, Docker
+
+- [Medium](https://medium.com/@sdamoosavi/google-stock-data-etl-with-cassandra-and-predictive-modeling-with-it-756a56b49ea9)
+
+---
+
+### [Transfer Learning Application](https://github.com/arezamoosavi/circus_of_orchestra)
+
+**Detail:** Implementation of training, pre-trained keras and torch models for categorical datasets
+
+**Tools:** Docker, Tensorflow, Torch, Keras
+
+---
+
+### [GPS Data Stream Processing](https://github.com/arezamoosavi/bluebus)
+
+**Detail:** Analysis of streams of gps data in kafka using spark-streaming
+
+**Tools:** Docker, Kafka, Spark, Postgres
+
+---
+
+### [Benchmarking Web Frameworks](https://github.com/arezamoosavi/web-services-bench)
+
+**Detail:** Implementation of very simple web applications
+
+**Tools:** Docker, Django, Flask, Fastapi, Falcon, Rust, Go
 
 ---
 
@@ -261,25 +258,35 @@
 
 ---
 
-<!-- [Project 1 Title](/sample_page)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+### [Jupyter k8s Deployment](https://github.com/arezamoosavi/tpum-service)
 
----
-[Project 2 Title](/pdf/sample_presentation.pdf)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+**Tools:** Centos7, Kubernetes, Jupyter, Docker
 
----
-[Project 3 Title](http://example.com/)
-<img src="images/dummy_thumbnail.jpg?raw=true"/>
+- [Medium](https://medium.com/@sdamoosavi/deploy-jupyter-lab-with-kubernetes-135f54e04da)
 
 ---
 
-### Category Name 2
+### [Transfer Learning Application](https://github.com/arezamoosavi/circus_of_orchestra)
 
-- [Project 1 Title](http://example.com/)
-- [Project 2 Title](http://example.com/)
-- [Project 3 Title](http://example.com/)
-- [Project 4 Title](http://example.com/)
-- [Project 5 Title](http://example.com/) -->
+**Detail:** Implementation of training, pre-trained keras and torch models for categorical datasets
+
+**Tools:** Docker, Tensorflow, Torch, Keras
 
 ---
+
+### [GPS Data Stream Processing](https://github.com/arezamoosavi/bluebus)
+
+**Detail:** Analysis of streams of gps data in kafka using spark-streaming
+
+**Tools:** Docker, Kafka, Spark, Postgres
+
+---
+
+### [Benchmarking Web Frameworks](https://github.com/arezamoosavi/web-services-bench)
+
+**Detail:** Implementation of very simple web applications
+
+**Tools:** Docker, Django, Flask, Fastapi, Falcon, Rust, Go
+
+---
+
