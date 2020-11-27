@@ -4,15 +4,15 @@
 
 ### [ATM Data Stream Processing](https://github.com/arezamoosavi/3doors)
 
-**Detail:** Stream processing of atm data from kafka and storing result data into a sql db
+**Detail:** In this app after start the atm data will be produced into kafka, then using spark streaming the data from that topic in kafka will be parsed and cleaned and saved into potgresql and hdfs; also the spark streaming job will be run with Airflow dag and the whole app is developed and deployed with docker and docker-compose
 
-**Tools:** Docker, Spark, KAfka, PostgresSql
+**Tools:** Docker, Spark, Kafka, PostgresSql, HDFS
 
 ---
 
 ### [Stock Data Analysis](https://github.com/arezamoosavi/stock-troy)
 
-**Detail:** Real-time tesla stock data collector and daily predictive modeling for next day prices with bokeh dashboard
+**Detail:** In this app the price of Tesla stock is going to obtained and saved into hdfs every hour and at the end of the day a randomforest model is going to be trained to predict next day prices based on history prices; the model also is going to be saved into MinIO. All these tasks is developed on Airflow and deployed with docker. At end there is a bokeh app the plot history of prices and uses the model in minio to get next day price in real-time!
 
 **Tools:** Docker, Airflow, Spark, Minio, Bokeh, HDFS, Random-Forest
 
@@ -20,7 +20,7 @@
 
 ### [Bitcoin Predictor](https://github.com/arezamoosavi/hot-coin)
 
-**Detail:** Real-time tesla stock data collector and daily predictive modeling for next day prices with bokeh dashboard
+**Detail:** This app will collect real-time price of bitcoin in USD and save data into csv and every 12h the model for bitcoin value prediction is going to be trained; these tasks are implemented with Twisted; finaly the result is ploted with Bokeh and have api with Tornado. This app is developed and deployed with docker on Heroku.
 
 **Tools:** Docker, Heroku, Tornado, Twisted, Bokeh, Random-Forest
 
@@ -31,7 +31,7 @@
 
 ### [Secret Chat App](https://github.com/arezamoosavi/whisper-chat)
 
-**Detail:** Websocket Chat App implementation with Fastapi on heroku
+**Detail:** This chat application has inf amout of rooms and can have inf users; it has been develeped with Fastapi websocket and deployed with docker on Heroku.
 
 **Tools:** Fastapi, Docker, Websocket, Heroku
 
@@ -42,7 +42,7 @@
 
 ### [Face Analyzer App](https://github.com/arezamoosavi/deepface-app)
 
-**Detail:** Restful api of deepface model with Fastapi and Heroku
+**Detail:** The Deepface library is deployed with Fastapi to check and compare faces; it uses mongodb as db and developed and deployed with docker on Heroku.
 
 **Tools:** Docker, Tensorflow, Deepface, Fastapi, Mongodb, Heroku
 
@@ -54,7 +54,15 @@
 
 ### [NASA Turbofan Microservice](https://github.com/arezamoosavi/predictive-maintenance-microservice)
 
-**Detail:** A microservice for predicting the remained life cycle for NASA turbofan
+**Detail:** This app is a microservicce that is developed with Nameko and has these components:
+
+- First based on the data sets in Kaggle, the randomforest model is trained
+- A restful service to get turbofan current state data; is developed with Fastapi and deployed with docker with Treafik as load balaner
+- A nameko service that check the data with trained randomforest model; if the data is faulty or not
+- A nameko service that save results and data into HBASE
+- Another nameko service that produce data and results into Kafka
+- A ELK dashboard is developed to get visualisation for the state of turbofan data; if it is faulty or not
+- All these service communicate with RabiitMQ
 
 **Tools:** Docker, Nameko, Hbase, Kafka, ELasticsearch, Logstash, Kibana, Fastapi, Treafik, Random-forest
 
