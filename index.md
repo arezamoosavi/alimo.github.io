@@ -1,6 +1,46 @@
+# Open source projects details
+
+---
+
 ## Big Projects
 
 ---
+
+### [NASA Turbofan Microservice](https://github.com/arezamoosavi/predictive-maintenance-microservice)
+
+**Detail:** This app is a microservicce that is developed with Nameko and has these components:
+
+- First based on the data sets in Kaggle, the randomforest model is trained
+- A restful service to get turbofan current state data; is developed with Fastapi and deployed with docker with Treafik as load balaner
+- A nameko service that check the data with trained randomforest model; if the data is faulty or not
+- A nameko service that save results and data into HBASE
+- Another nameko service that produce data and results into Kafka
+- A ELK dashboard is developed to get visualisation for the state of turbofan data; if it is faulty or not
+- All these service communicate with RabiitMQ
+
+**Tools:** Docker, Nameko, Hbase, Kafka, ELasticsearch, Logstash, Kibana, Fastapi, Treafik, Random-forest
+
+- [Kaggle](https://www.kaggle.com/arezamoosavi/nasa-predictive-maintenance-notebook)
+- [Medium](https://medium.com/@sdamoosavi/ml-microservice-with-nameko-to-implement-a-predictive-maintenance-application-f59d4ed60be3)
+
+---
+
+### [Real-time Fraud Detection](https://github.com/arezamoosavi/FraudDetction-API)
+
+**Detail:** In this project, a trained model in core of web service is used for classiication sent data:
+
+- Based on Credit card data in Kaggle a random forest classifier is trained
+- Both restful service and a websocket connection is developed with Fastapi for getting data
+- The results and the data are stored into Cassandra
+- This app is built and deployed with docker
+
+**Tools:** Docker, Fastapi, Random Forest Model, Websocket, Cassandra
+
+- [Kaggle](https://www.kaggle.com/arezamoosavi/credit-card-fraud-detection)
+- [Medium](https://medium.com/@sdamoosavi/real-time-fraud-detection-web-application-3b99aa85eea8)
+
+---
+
 
 ### [ATM Data Stream Processing](https://github.com/arezamoosavi/3doors)
 
@@ -31,7 +71,7 @@
 
 ### [Secret Chat App](https://github.com/arezamoosavi/whisper-chat)
 
-**Detail:** This chat application has inf amout of rooms and can have inf users; it has been develeped with Fastapi websocket and deployed with docker on Heroku.
+**Detail:** This chat application could have as many users and rooms, that never stores data; it has been develeped with Fastapi websocket and deployed with docker on Heroku.
 
 **Tools:** Fastapi, Docker, Websocket, Heroku
 
@@ -52,49 +92,12 @@
 
 ---
 
-### [NASA Turbofan Microservice](https://github.com/arezamoosavi/predictive-maintenance-microservice)
-
-**Detail:** This app is a microservicce that is developed with Nameko and has these components:
-
-- First based on the data sets in Kaggle, the randomforest model is trained
-- A restful service to get turbofan current state data; is developed with Fastapi and deployed with docker with Treafik as load balaner
-- A nameko service that check the data with trained randomforest model; if the data is faulty or not
-- A nameko service that save results and data into HBASE
-- Another nameko service that produce data and results into Kafka
-- A ELK dashboard is developed to get visualisation for the state of turbofan data; if it is faulty or not
-- All these service communicate with RabiitMQ
-
-**Tools:** Docker, Nameko, Hbase, Kafka, ELasticsearch, Logstash, Kibana, Fastapi, Treafik, Random-forest
-
-- [Kaggle](https://www.kaggle.com/arezamoosavi/nasa-predictive-maintenance-notebook)
-- [Medium](https://medium.com/@sdamoosavi/ml-microservice-with-nameko-to-implement-a-predictive-maintenance-application-f59d4ed60be3)
-
----
-
-### [Real-time Fraud Detection](https://github.com/arezamoosavi/FraudDetction-API)
-
-**Detail:** A real-time credit card fraud detection web app
-
-**Tools:** Docker, Fastapi, Random Forest Model, Websocket, Cassandra
-
-- [Medium](https://medium.com/@sdamoosavi/real-time-fraud-detection-web-application-3b99aa85eea8)
-
----
-
-### [Microservice App](https://github.com/arezamoosavi/micro-telesys)
-
-**Detail:** Implementation of a simple microservice with Flask and Fastapi
-
-**Tools:** Nameko, RMQ. Redis, Flask, Fastapi, Docker, K8S
-
-- [Medium (1)](https://medium.com/@sdamoosavi/nameko-microservice-with-flask-and-fastapi-docker-6e9230408ad1)
-- [Medium (2)](https://medium.com/@sdamoosavi/nameko-microservice-with-flask-and-fastapi-kubernetes-a51f83d39b01)
-
----
-
 ### [Music Recommender Restful Api](https://github.com/arezamoosavi/rec-music)
 
-**Detail:** Implementation of Item based Music Recommender with fastapi on Heroku
+**Detail:** Music recommender with Item based collaborative filtering based on KNN:
+
+- The Restful service is built with Fastapi
+- This app is built and deployed with docker on Herku
 
 **Tools:** Docker, Tensorflow, Torch, Keras
 
@@ -105,7 +108,12 @@
 
 ### [Goodreaders Book Recommender](https://github.com/arezamoosavi/book-recommend-web-service)
 
-**Detail:** Book Recommender based on favorated books
+**Detail:** Book Recommender with Item based collaborative filtering based on KNN (based on kaggle dataset):
+
+- The Restful service is built with Flask and ML tasks is handeled with celery
+- Cassandra is database for saving results and data
+- This app is built and deployed with docker
+
 
 **Tools:** Cassandra, Flask, Restful-api, Pandas, Sklearn, Gunicorn, Redis, RabbitMq, Celery, Docker
 
@@ -117,9 +125,13 @@
 
 ### [Spotify Music Recommender](https://github.com/arezamoosavi/music-recsys-engine-app)
 
-**Detail:** Content based Recommender for Musics. The data gathered by using spotify api for retrieving music features and recommend based on them
+**Detail:** Music recommender with Item based collaborative filtering based on KNN:
 
-**Tools:** Flask, Pandas, Postgre, Docker, Nginx, Celery, Rabbitmq, Redis
+- The Restful service is built with Flask and ML tasks is handeled with celery
+- Postgres is database for saving results and data
+- This app is built and deployed with docker
+
+**Tools:** Flask, Pandas, Postgres, Docker, Nginx, Celery, Rabbitmq, Redis
 
 - [Medium (1)](https://medium.com/@sdamoosavi/music-recommender-web-service-flask-and-celery-a1274b488ab)
 - [Medium (2)](https://medium.com/@sdamoosavi/music-recommender-web-service-ml-ef6fdd1fc026)
@@ -128,7 +140,11 @@
 
 ### [Movie Recommender](https://github.com/arezamoosavi/movie-recommendation)
 
-**Detail:** A asynchronous web service movie recommender with KNN
+**Detail:** Movie recommender with Item based collaborative filtering based on KNN (based on movielens data):
+
+- The Restful service is built with Flask and ML tasks is handeled with celery
+- Mongodb is database for saving results and data
+- This app is built and deployed with docker
 
 **Tools:** Flask, Pandas, Mongodb, Docker, Nginx, Celery, Rabbitmq, Redis
 
@@ -137,19 +153,38 @@
 
 ---
 
-### [ELK stack](https://github.com/arezamoosavi/citro-m)
+### [Store App with Graphql](https://github.com/arezamoosavi/shopping-app)
 
-**Detail:** Backend logs monitoring with ELK stack
+**Detail:** An store application:
 
-**Tools:** Kafka, Logstash, Elasticsearch, Kibana, Docker-compose
+- Developed with django rest framework (DRF) and using Graphene for Graphql routes
+- This app is developed and deployed using docker
 
-- [Medium](https://medium.com/@sdamoosavi/real-time-data-monitoring-using-kafka-logstash-elasticsearch-and-kibana-39eb046d214f)
+**Tools:** Django Rest Framework, Postgre, Docker, Graphiql, Graphene
+
+- [Medium](https://medium.com/@sdamoosavi/shopping-application-with-django-and-django-graphene-7b47e9d1bf7a)
 
 ---
 
+
+## Small Projects and Practices:
+
+---
+
+### [APIs Load Testing](https://github.com/arezamoosavi/Api-load-testing)
+
+**Detail:** Hands on Load Testing with Locust; This app is restful service developed with Starlette and Postgres as database. All process is developed and deployed using docker.
+
+**Tools:** Kafka, Faust, Locust, Starlette, Asyncpg, tortoise, redis, Docker
+
+- [Medium](https://medium.com/@sdamoosavi/web-application-load-testing-with-locust-c532f2f5b3eb)
+
+---
+
+
 ### [Simple Web App k8s deployment](https://github.com/arezamoosavi/minium)
 
-**Detail:** Monitoring data in kafka with druid and superset.
+**Detail:** A simple rest service with Fastapi; dockerized and deployed with k8s
 
 **Tools:** Fastapi, Kubernetes, Docker, Docker-registery
 
@@ -157,9 +192,9 @@
 
 ---
 
-### [Fastapi App k8s deployment](https://github.com/arezamoosavi/INapp)
+### [Advanced App k8s deployment](https://github.com/arezamoosavi/INapp)
 
-**Detail:** Web application with database dependency deployment
+**Detail:** A simple web service that uses posgres is developed with Fastapi on docker and deployed with k8s
 
 **Tools:** Docker, Docker-registery, Fastapi, Postgresql, Tortoise-orm, Asyncpg, Kubernetes
 
@@ -169,7 +204,7 @@
 
 ### [Nameko App k8s deployment](https://github.com/arezamoosavi/wubba)
 
-**Detail:** This microservice app has a web app and uses rabitmq and redis.
+**Detail:** Just a simple microservice developed with Nameko and deployed with k8s
 
 **Tools:** Docker, Nameko, Redis, RabbitMQ, Kubernetes
 
@@ -177,24 +212,31 @@
 
 ---
 
+### [Microservice App](https://github.com/arezamoosavi/micro-telesys)
 
-## Small Projects and Practices:
+**Detail:** A simple microservice implemnted with Nameko and Flask; built and deployed with docker
+
+**Tools:** Nameko, RMQ. Redis, Flask, Fastapi, Docker, K8S
+
+- [Medium (1)](https://medium.com/@sdamoosavi/nameko-microservice-with-flask-and-fastapi-docker-6e9230408ad1)
+- [Medium (2)](https://medium.com/@sdamoosavi/nameko-microservice-with-flask-and-fastapi-kubernetes-a51f83d39b01)
 
 ---
 
-### [Store App with Graphql](https://github.com/arezamoosavi/shopping-app)
 
-**Detail:** A simple graphql implementation with django
+### [ELK stack](https://github.com/arezamoosavi/citro-m)
 
-**Tools:** Django Rest Framework, Postgre, Docker, Graphiql, Graphene
+**Detail:** The data is produced into a topic in kafka, the with logstash configuration; the data will be stored in elasticsearch and using kibana a dashboard could be developed. This add is build and deployed with docker
 
-- [Medium](https://medium.com/@sdamoosavi/shopping-application-with-django-and-django-graphene-7b47e9d1bf7a)
+**Tools:** Kafka, Logstash, Elasticsearch, Kibana, Docker-compose
+
+- [Medium](https://medium.com/@sdamoosavi/real-time-data-monitoring-using-kafka-logstash-elasticsearch-and-kibana-39eb046d214f)
 
 ---
 
 ### [Mock for Testing Faust Streaming](https://github.com/arezamoosavi/f-on-top)
 
-**Detail:** Testing faust application with mongodb.
+**Detail:** A simple Faust stream processing app and how to mock the asynchronous process of Faust for unit tests; also mocking mongodb. This app is developed with docker.
 
 **Tools:** Faust, Mongodb, Mock, Unit tests, Kafka, Docker
 
@@ -204,7 +246,7 @@
 
 ### [Real-time Dashboard](https://github.com/arezamoosavi/puiiter)
 
-**Detail:** Monitoring kafka and datasets in mysql on grafana
+**Detail:** A dashboard for the gold price data in mysql using grafana; also monitoring kafka and the topics data rate.
 
 **Tools:** Prometheus, Grafana, Mysql, Kafka, Docker
 
@@ -214,7 +256,7 @@
 
 ### [Real-time Bitcoin Price](https://github.com/arezamoosavi/BTC-Alarming)
 
-**Detail:** Implementation of training, pre-trained keras and torch models for categorical datasets
+**Detail:** Implementation of training, pre-trained keras and torch models for categorical datasets; this app is developed and deployed with docker.
 
 **Tools:** Faust, Kafka, Asyncpg, Tortoise, Docker, Redis
 
@@ -224,7 +266,12 @@
 
 ### [ETL With Cassandra](https://github.com/arezamoosavi/ETL-Cassandra)
 
-**Detail:** ETL Google Stock data to Cassandra and predicting the next month stock’s closing price
+**Detail:** In this app:
+
+- The goggle stock data is saved into cassandra using cqlengine
+- Then an ETL job will take the data and after preprocessing, using them to predict next month closing price
+- This app is developed using docker.
+
 
 **Tools:** Cassandra, Pandas, Sklearn, ETL, Docker
 
@@ -234,15 +281,16 @@
 
 ### [Transfer Learning Application](https://github.com/arezamoosavi/circus_of_orchestra)
 
-**Detail:** Implementation of training, pre-trained keras and torch models for categorical datasets
+**Detail:** Implementation of training, pre-trained keras and torch models for categorical datasets; this app is developed using docker.
 
 **Tools:** Docker, Tensorflow, Torch, Keras
 
 ---
 
+
 ### [GPS Data Stream Processing](https://github.com/arezamoosavi/bluebus)
 
-**Detail:** Analysis of streams of gps data in kafka using spark-streaming
+**Detail:** Streams of GPS data are produced into kafka; using spark-streaming the data will be analyzed and stored into postgres; This app is developed and deployed with docker.
 
 **Tools:** Docker, Kafka, Spark, Postgres
 
@@ -250,23 +298,15 @@
 
 ### [Benchmarking Web Frameworks](https://github.com/arezamoosavi/web-services-bench)
 
-**Detail:** Implementation of very simple web applications
+**Detail:** Implementation of very simple web applications and trying to do some stress tests; all apps are develoepd and deplyed with docker.
 
 **Tools:** Docker, Django, Flask, Fastapi, Falcon, Rust, Go
 
 ---
 
-### [APIs Load Testing](https://github.com/arezamoosavi/Api-load-testing)
-
-**Detail:** Implementation of load testing with Locust.
-
-**Tools:** Kafka, Faust, Locust, Starlette, Asyncpg, tortoise, redis, Docker
-
-- [Medium](https://medium.com/@sdamoosavi/web-application-load-testing-with-locust-c532f2f5b3eb)
-
----
-
 ### [Jupyter k8s Deployment](https://github.com/arezamoosavi/tpum-service)
+
+**Detail:** Deployment of Jupyterlab using dockerhub and K8S.
 
 **Tools:** Centos7, Kubernetes, Jupyter, Docker
 
@@ -274,27 +314,45 @@
 
 ---
 
-### [Transfer Learning Application](https://github.com/arezamoosavi/circus_of_orchestra)
+### [Hands on Spark with Scala](https://github.com/arezamoosavi/fpianeska)
 
-**Detail:** Implementation of training, pre-trained keras and torch models for categorical datasets
+**Detail:** Hands on Spark using scala and sbt. All process is developed and deployed using docker.
 
-**Tools:** Docker, Tensorflow, Torch, Keras
+- Hands on movilens data: ALS algorithm for movie recommendation, Spark SQL on data and etc.
 
----
-
-### [GPS Data Stream Processing](https://github.com/arezamoosavi/bluebus)
-
-**Detail:** Analysis of streams of gps data in kafka using spark-streaming
-
-**Tools:** Docker, Kafka, Spark, Postgres
+**Tools:** Spark, Scala, Docker
 
 ---
 
-### [Benchmarking Web Frameworks](https://github.com/arezamoosavi/web-services-bench)
+### [Dashboards with druid superset](https://github.com/arezamoosavi/glasco)
 
-**Detail:** Implementation of very simple web applications
+**Detail:** Hands on Kafka, Druid, Superset; for dashboards. All process is developed and deployed using docker.
 
-**Tools:** Docker, Django, Flask, Fastapi, Falcon, Rust, Go
+**Tools:** Kafka, Druid, Superset, Docker
 
 ---
 
+### [Simple Rust Web app and K8S deployment](https://github.com/arezamoosavi/getRusty)
+
+**Detail:** A very simple rest api app developed with rust; using docker for building and Kubernetes for deployment.
+
+**Tools:** Rust, Docker, Kubernetes
+
+---
+
+
+### [Scala and Java Apps on Docker](https://github.com/arezamoosavi/oldSchool)
+
+**Detail:** Developing Java and Scala apps using docker.
+
+**Tools:** Scala, Java, Docker
+
+---
+
+### [databases scripts](https://github.com/arezamoosavi/client-side-datasources)
+
+**Detail:** Hands on Mysql, Mongodb, Postgres, MSSQL using python and jupyter. All process is developed and deployed using docker.
+
+**Tools:** Mysql, Mongodb, Postgres, MSSQL, Docker
+
+---
