@@ -153,19 +153,16 @@
 
 ---
 
-### [Store App with Graphql](https://github.com/arezamoosavi/shopping-app)
+### [Microservice App with Flask and Fastapi deployed using K8S](https://github.com/arezamoosavi/micro-telesys)
 
-**Detail:** An store application:
+**Detail:** A simple microservice implemnted with Nameko, Fastapi and Flask; built with docker and deployed using Kubernetes
 
-- Developed with django rest framework (DRF) and using Graphene for Graphql routes
-- This app is developed and deployed using docker
+**Tools:** Nameko, RMQ. Redis, Flask, Fastapi, Docker, Kubernetes
 
-**Tools:** Django Rest Framework, Postgre, Docker, Graphiql, Graphene
-
-- [Medium](https://medium.com/@sdamoosavi/shopping-application-with-django-and-django-graphene-7b47e9d1bf7a)
+- [Medium (1)](https://medium.com/@sdamoosavi/nameko-microservice-with-flask-and-fastapi-docker-6e9230408ad1)
+- [Medium (2)](https://medium.com/@sdamoosavi/nameko-microservice-with-flask-and-fastapi-kubernetes-a51f83d39b01)
 
 ---
-
 
 ## Small Projects and Practices:
 
@@ -212,17 +209,6 @@
 
 ---
 
-### [Microservice App](https://github.com/arezamoosavi/micro-telesys)
-
-**Detail:** A simple microservice implemnted with Nameko and Flask; built and deployed with docker
-
-**Tools:** Nameko, RMQ. Redis, Flask, Fastapi, Docker, K8S
-
-- [Medium (1)](https://medium.com/@sdamoosavi/nameko-microservice-with-flask-and-fastapi-docker-6e9230408ad1)
-- [Medium (2)](https://medium.com/@sdamoosavi/nameko-microservice-with-flask-and-fastapi-kubernetes-a51f83d39b01)
-
----
-
 
 ### [ELK stack](https://github.com/arezamoosavi/citro-m)
 
@@ -256,7 +242,7 @@
 
 ### [Real-time Bitcoin Price](https://github.com/arezamoosavi/BTC-Alarming)
 
-**Detail:** Implementation of training, pre-trained keras and torch models for categorical datasets; this app is developed and deployed with docker.
+**Detail:** Every Second the Bitcoin value is going to get processed and saved into postgres, if the value goes under a specific pre-defined value; it will alarm. This app is developed and deployed with docker.
 
 **Tools:** Faust, Kafka, Asyncpg, Tortoise, Docker, Redis
 
@@ -349,10 +335,23 @@
 
 ---
 
-### [databases scripts](https://github.com/arezamoosavi/client-side-datasources)
+### [Databases scripts](https://github.com/arezamoosavi/client-side-datasources)
 
 **Detail:** Hands on Mysql, Mongodb, Postgres, MSSQL using python and jupyter. All process is developed and deployed using docker.
 
 **Tools:** Mysql, Mongodb, Postgres, MSSQL, Docker
+
+---
+
+### [Store App with Graphql](https://github.com/arezamoosavi/shopping-app)
+
+**Detail:** An store application:
+
+- Developed with django rest framework (DRF) and using Graphene for Graphql routes
+- This app is developed and deployed using docker
+
+**Tools:** Django Rest Framework, Postgre, Docker, Graphiql, Graphene
+
+- [Medium](https://medium.com/@sdamoosavi/shopping-application-with-django-and-django-graphene-7b47e9d1bf7a)
 
 ---
