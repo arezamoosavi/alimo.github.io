@@ -355,3 +355,24 @@
 - [Medium](https://medium.com/@sdamoosavi/shopping-application-with-django-and-django-graphene-7b47e9d1bf7a)
 
 ---
+
+### [Spam Classifier](https://github.com/arezamoosavi/shopping-app)
+
+**Detail:** Quora Duplicate Question Classifier on XGBOOST with 81% accuracy
+
+**Tools:** Xgboost, Pandas, Scikit-learn
+
+- [Kaggle](https://www.kaggle.com/arezamoosavi/quora-duplicate-detection)
+
+---
+
+### [Topic Modeling](https://www.kaggle.com/arezamoosavi/consumer-complaints-prediction)
+
+**Detail:** Predicting Consumer Product based on Consumer‘s Complaints with 98% accuracy
+
+**Tools:** Keras, Pandas, Scikit-learn
+
+- [Kaggle](https://medium.com/@sdamoosavi/shopping-application-with-django-and-django-graphene-7b47e9d1bf7a)
+
+---
+
