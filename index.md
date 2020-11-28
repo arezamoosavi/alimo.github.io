@@ -370,9 +370,9 @@
 
 **Detail:** Predicting Consumer Product based on Consumer‘s Complaints with 98% accuracy
 
-**Tools:** Keras, Pandas, Scikit-learn
+**Tools:** Keras, Pandas, Tensorflow
 
-- [Kaggle](https://medium.com/@sdamoosavi/shopping-application-with-django-and-django-graphene-7b47e9d1bf7a)
+- [Kaggle](https://www.kaggle.com/arezamoosavi/consumer-complaints-prediction)
 
 ---
 
