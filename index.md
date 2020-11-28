@@ -10,13 +10,13 @@
 
 **Detail:** This app is a microservicce that is developed with Nameko and has these components:
 
-- First based on the data sets in Kaggle, the randomforest model is trained
-- A restful service to get turbofan current state data; is developed with Fastapi and deployed with docker with Treafik as load balaner
-- A nameko service that check the data with trained randomforest model; if the data is faulty or not
+- First based on the data sets in Kaggle, the random forest model is trained
+- A restful service to get turbofan current state data; is developed with Fastapi and built with docker; for load balancing Treafik is employed
+- A nameko service that check the data with trained random forest classifier; if the data is faulty or not
 - A nameko service that save results and data into HBASE
-- Another nameko service that produce data and results into Kafka
-- A ELK dashboard is developed to get visualisation for the state of turbofan data; if it is faulty or not
-- All these service communicate with RabiitMQ
+- Another nameko service that produce data and results into a Kafka topic
+- An ELK dashboard is developed to get visualisation for the state of turbofan data
+- All these service communicate using RabiitMQ
 
 **Tools:** Docker, Nameko, Hbase, Kafka, ELasticsearch, Logstash, Kibana, Fastapi, Treafik, Random-forest
 
@@ -27,11 +27,11 @@
 
 ### [Real-time Fraud Detection](https://github.com/arezamoosavi/FraudDetction-API)
 
-**Detail:** In this project, a trained model in core of web service is used for classiication sent data:
+**Detail:** In this project, a trained model in core of web service is used for classification the sent data:
 
-- Based on Credit card data in Kaggle a random forest classifier is trained
-- Both restful service and a websocket connection is developed with Fastapi for getting data
-- The results and the data are stored into Cassandra
+- Based on Credit Card data in Kaggle a random forest classifier is trained
+- Both restful service and a websocket connection is developed with Fastapi; in order to process the data
+- The results and the data are saved into Cassandra
 - This app is built and deployed with docker
 
 **Tools:** Docker, Fastapi, Random Forest Model, Websocket, Cassandra
@@ -46,13 +46,13 @@
 
 **Detail:** In this app after start the atm data will be produced into kafka, then using spark streaming the data from that topic in kafka will be parsed and cleaned and saved into potgresql and hdfs; also the spark streaming job will be run with Airflow dag and the whole app is developed and deployed with docker and docker-compose
 
-**Tools:** Docker, Spark, Kafka, PostgresSql, HDFS
+**Tools:** Airflow, Docker, Spark, Kafka, PostgresSql, HDFS
 
 ---
 
 ### [Stock Data Analysis](https://github.com/arezamoosavi/stock-troy)
 
-**Detail:** In this app the price of Tesla stock is going to obtained and saved into hdfs every hour and at the end of the day a randomforest model is going to be trained to predict next day prices based on history prices; the model also is going to be saved into MinIO. All these tasks is developed on Airflow and deployed with docker. At end there is a bokeh app the plot history of prices and uses the model in minio to get next day price in real-time!
+**Detail:** In this app the price of Tesla stock is going to obtained and saved into hdfs every hour and at the end of the day a random forest model is going to be trained to predict next day prices based on history prices; the model also is going to be saved into MinIO. All these tasks is developed on Airflow and built and deployed with docker. At end there is a bokeh app the plot history of prices and uses the model in minio to get next day price in real-time!
 
 **Tools:** Docker, Airflow, Spark, Minio, Bokeh, HDFS, Random-Forest
 
@@ -71,7 +71,7 @@
 
 ### [Secret Chat App](https://github.com/arezamoosavi/whisper-chat)
 
-**Detail:** This chat application could have as many users and rooms, that never stores data; it has been develeped with Fastapi websocket and deployed with docker on Heroku.
+**Detail:** This chat application could have as many users and rooms, that never stores data; it has been develeped with Fastapi websocket; built and deployed with docker on Heroku.
 
 **Tools:** Fastapi, Docker, Websocket, Heroku
 
@@ -96,10 +96,10 @@
 
 **Detail:** Music recommender with Item based collaborative filtering based on KNN:
 
-- The Restful service is built with Fastapi
-- This app is built and deployed with docker on Herku
+- The Restful service is developed with Fastapi
+- This app is built and deployed with docker on Heroku
 
-**Tools:** Docker, Tensorflow, Torch, Keras
+**Tools:** Docker, Fastapi, Pandas, Scikit-learn, Heroku
 
 - [Heroku](https://rec-music.herokuapp.com/docs)
 - [Medium](https://medium.com/@sdamoosavi/deploy-music-recommender-on-heroku-e0dce3d924ef)
@@ -110,12 +110,11 @@
 
 **Detail:** Book Recommender with Item based collaborative filtering based on KNN (based on kaggle dataset):
 
-- The Restful service is built with Flask and ML tasks is handeled with celery
+- The Restful service is developed with Flask and ML tasks is handeled with celery
 - Cassandra is database for saving results and data
 - This app is built and deployed with docker
 
-
-**Tools:** Cassandra, Flask, Restful-api, Pandas, Sklearn, Gunicorn, Redis, RabbitMq, Celery, Docker
+**Tools:** Cassandra, Flask, Restful-api, Pandas, Scikit-learn, Gunicorn, Redis, RabbitMq, Celery, Docker
 
 - [Medium (1)](https://medium.com/@sdamoosavi/book-recommender-web-service-ml-e79119535258)
 - [Medium (2)](https://medium.com/@sdamoosavi/book-recommender-web-service-cassandra-4a359917d713)
@@ -127,7 +126,7 @@
 
 **Detail:** Music recommender with Item based collaborative filtering based on KNN:
 
-- The Restful service is built with Flask and ML tasks is handeled with celery
+- The Restful service is developed with Flask and ML tasks is handeled with celery
 - Postgres is database for saving results and data
 - This app is built and deployed with docker
 
@@ -142,7 +141,7 @@
 
 **Detail:** Movie recommender with Item based collaborative filtering based on KNN (based on movielens data):
 
-- The Restful service is built with Flask and ML tasks is handeled with celery
+- The Restful service is developed with Flask and ML tasks is handeled with celery
 - Mongodb is database for saving results and data
 - This app is built and deployed with docker
 
@@ -170,7 +169,7 @@
 
 ### [APIs Load Testing](https://github.com/arezamoosavi/Api-load-testing)
 
-**Detail:** Hands on Load Testing with Locust; This app is restful service developed with Starlette and Postgres as database. All process is developed and deployed using docker.
+**Detail:** Hands on Load Testing with Locust; This app is restful service developed with Starlette and Postgres as database. All services are built and deployed using docker.
 
 **Tools:** Kafka, Faust, Locust, Starlette, Asyncpg, tortoise, redis, Docker
 
@@ -189,7 +188,7 @@
 
 ---
 
-### [Advanced App k8s deployment](https://github.com/arezamoosavi/INapp)
+### [Another with App k8s deployment](https://github.com/arezamoosavi/INapp)
 
 **Detail:** A simple web service that uses posgres is developed with Fastapi on docker and deployed with k8s
 
@@ -222,7 +221,7 @@
 
 ### [Mock for Testing Faust Streaming](https://github.com/arezamoosavi/f-on-top)
 
-**Detail:** A simple Faust stream processing app and how to mock the asynchronous process of Faust for unit tests; also mocking mongodb. This app is developed with docker.
+**Detail:** A simple Faust stream processing app and how to mock the asynchronous process of Faust for unit tests; also mocking mongodb. This app is built with docker.
 
 **Tools:** Faust, Mongodb, Mock, Unit tests, Kafka, Docker
 
@@ -242,7 +241,7 @@
 
 ### [Real-time Bitcoin Price](https://github.com/arezamoosavi/BTC-Alarming)
 
-**Detail:** Every Second the Bitcoin value is going to get processed and saved into postgres, if the value goes under a specific pre-defined value; it will alarm. This app is developed and deployed with docker.
+**Detail:** Every Second the Bitcoin value is going to get processed and saved into postgres, if the value goes under a specific pre-defined value; it will alarm. This app is built and deployed with docker.
 
 **Tools:** Faust, Kafka, Asyncpg, Tortoise, Docker, Redis
 
@@ -256,10 +255,10 @@
 
 - The goggle stock data is saved into cassandra using cqlengine
 - Then an ETL job will take the data and after preprocessing, using them to predict next month closing price
-- This app is developed using docker.
+- This app is built and deployed using docker.
 
 
-**Tools:** Cassandra, Pandas, Sklearn, ETL, Docker
+**Tools:** Cassandra, Pandas, Scikit-learn, ETL, Docker
 
 - [Medium](https://medium.com/@sdamoosavi/google-stock-data-etl-with-cassandra-and-predictive-modeling-with-it-756a56b49ea9)
 
@@ -267,7 +266,7 @@
 
 ### [Transfer Learning Application](https://github.com/arezamoosavi/circus_of_orchestra)
 
-**Detail:** Implementation of training, pre-trained keras and torch models for categorical datasets; this app is developed using docker.
+**Detail:** Implementation of training, pre-trained keras and torch models for categorical datasets; this app is built using docker.
 
 **Tools:** Docker, Tensorflow, Torch, Keras
 
@@ -276,7 +275,7 @@
 
 ### [GPS Data Stream Processing](https://github.com/arezamoosavi/bluebus)
 
-**Detail:** Streams of GPS data are produced into kafka; using spark-streaming the data will be analyzed and stored into postgres; This app is developed and deployed with docker.
+**Detail:** Streams of GPS data are produced into kafka; using spark-streaming the data will be analyzed and stored into postgres; This app is built and deployed with docker.
 
 **Tools:** Docker, Kafka, Spark, Postgres
 
@@ -284,7 +283,7 @@
 
 ### [Benchmarking Web Frameworks](https://github.com/arezamoosavi/web-services-bench)
 
-**Detail:** Implementation of very simple web applications and trying to do some stress tests; all apps are develoepd and deplyed with docker.
+**Detail:** Implementation of very simple web applications and trying to do some stress tests; all apps are built and deployed with docker.
 
 **Tools:** Docker, Django, Flask, Fastapi, Falcon, Rust, Go
 
@@ -302,7 +301,7 @@
 
 ### [Hands on Spark with Scala](https://github.com/arezamoosavi/fpianeska)
 
-**Detail:** Hands on Spark using scala and sbt. All process is developed and deployed using docker.
+**Detail:** Hands on Spark using scala and sbt. All process is built and deployed with docker.
 
 - Hands on movilens data: ALS algorithm for movie recommendation, Spark SQL on data and etc.
 
@@ -312,7 +311,7 @@
 
 ### [Dashboards with druid superset](https://github.com/arezamoosavi/glasco)
 
-**Detail:** Hands on Kafka, Druid, Superset; for dashboards. All process is developed and deployed using docker.
+**Detail:** Hands on Kafka, Druid, Superset; for dashboards. All services are built and deployed using docker.
 
 **Tools:** Kafka, Druid, Superset, Docker
 
@@ -337,7 +336,7 @@
 
 ### [Databases scripts](https://github.com/arezamoosavi/client-side-datasources)
 
-**Detail:** Hands on Mysql, Mongodb, Postgres, MSSQL using python and jupyter. All process is developed and deployed using docker.
+**Detail:** Hands on Mysql, Mongodb, Postgres, MSSQL using python and jupyter. All services are built and deployed using docker.
 
 **Tools:** Mysql, Mongodb, Postgres, MSSQL, Docker
 
@@ -348,7 +347,7 @@
 **Detail:** An store application:
 
 - Developed with django rest framework (DRF) and using Graphene for Graphql routes
-- This app is developed and deployed using docker
+- This app is built and deployed using docker
 
 **Tools:** Django Rest Framework, Postgre, Docker, Graphiql, Graphene
 
