@@ -10,7 +10,7 @@
 
 **Detail:** This app is a microservicce that is developed with Nameko and has these components:
 
-- First based on the data sets in Kaggle, the random forest model is trained
+- First based on the data sets in Kaggle, the random forest model is trained to predict remained life cycle in current state of turbine
 - A restful service to get turbofan current state data; is developed with Fastapi and built with docker; for load balancing Treafik is employed
 - A nameko service that check the data with trained random forest classifier; if the data is faulty or not
 - A nameko service that save results and data into HBASE
